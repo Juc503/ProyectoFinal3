@@ -35,23 +35,30 @@ const normalizeData = (data) => {
     return contacts;
 };
 
+
 // 5. Crear una funcion que rendere (pinte) la informacion de cada tarjeta de contacto
 const renderCardContact = (element) => {
 
     const li = document.createElement('li');
     const cardDiv = document.createElement('div');
     const photoDiv = document.createElement('div');
+    const imgDiv = document.createElement('div');
     const img = document.createElement('img');
     const texDiv = document.createElement('div');
     
-    cardDiv.classList.add('card');
-    photoDiv.classList.add('photo');
+    texDiv.classList.add('name');
+    cardDiv.classList.add('cardContainer')
+    photoDiv.classList.add('card');
+    imgDiv.classList.add('front');
+    img.classList.add( 'photo')
+    
+
     
     let photo = ''
     if (element?.photo) {
         photo = element.photo;
     } else {
-        photo = 'data:https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/HP_-_Harry_Potter_wordmark.svg/548px-HP_-_Harry_Potter_wordmark.svg.png'}
+        photo = 'data:https://i.pinimg.com/474x/4d/16/d3/4d16d3346cc4415f0984fa7d9b70fc51.jpg';}
     
     img.setAttribute('src', photo);
 
@@ -60,9 +67,22 @@ const renderCardContact = (element) => {
 
     ulElement.appendChild(li);
     li.appendChild(cardDiv);
+    photoDiv.appendChild(imgDiv);
+    imgDiv.appendChild(img);
     cardDiv.appendChild(photoDiv);
     cardDiv.appendChild(texDiv);
-    photoDiv.appendChild(img);
+    
+
+
+
+
+    const flipCard = document.createElement("div");
+    flipCard.classList.add("back");
+    flipCard.innerHTML=element.house;
+
+  
+    photoDiv.appendChild(flipCard);
+    
 
 };
 

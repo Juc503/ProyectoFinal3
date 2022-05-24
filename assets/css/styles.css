@@ -151,19 +151,27 @@ grid-template:
 
 
 
-
 .contact-list {
     list-style: none;
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
 }
-img {
-    width: 200px; height: 250px;
-    border: 8px solid #a38b00;
-    border-radius: 50%;
+.photo {
+    width: 180px; height: 230px;
+    border: 7px solid #a38b00;
+    
 }
+.name{ 
+  padding: 10px;
+  font-family: copperplate;
+  font-weight: bold;
+  font-size: 20px;
+  color: #460d0d;
+  position: absolute;
+  top:220px; left:3px;
 
+}
 .list-container {
   padding: 20px;
   border-top:20px ;
@@ -171,17 +179,54 @@ img {
     overflow-y: auto;
 }
 
-.photo{
-  background-image: src("file:///Users/redd/Desktop/G15-DEV-1/ProyectoFinal/assets/css/frog.png");
-}
 
 ::-webkit-scrollbar {
   display: none;
 }
 
 
+.cardContainer{
+  position: relative;
+  width: 220px; height: 300px;
 
 
+}
+.card{
+  position: absolute;
+  width: 200px; height: 250px;
+  transform-style: preserve-3d;
+  transition: all 0.7s ease;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+
+}
+
+.front{
+  position: absolute;
+  width: 180px; height: 230px;
+
+  font-family: copperplate;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  color: #fcfcfc;
+  
+}
+
+
+.back{
+  position: absolute;
+  width: 180px; height: 230px;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  font-family: copperplate;
+  font-weight: bold;
+  font-size: 20px;
+  color: #fcfcfc;
+
+}
 
 
 

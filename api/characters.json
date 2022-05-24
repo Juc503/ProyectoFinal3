@@ -290,6 +290,182 @@
        "image":"http://hp-api.herokuapp.com/images/crabbe.jpg"
     },
     {
+      "name":"Sirius Black",
+      "alternate_names":[
+         "Padfoot",
+         "Snuffles"
+      ],
+      "species":"human",
+      "gender":"male",
+      "house":"Gryffindor",
+      "dateOfBirth":"03-11-1959",
+      "yearOfBirth":1959,
+      "wizard":true,
+      "ancestry":"pure-blood",
+      "eyeColour":"grey",
+      "hairColour":"black",
+      "wand":{
+         "wood":"",
+         "core":"",
+         "length":""
+      },
+      "patronus":"hare",
+      "hogwartsStudent":false,
+      "hogwartsStaff":false,
+      "actor":"Gary Oldman",
+      "alternate_actors":[
+         "James Walters",
+         "Rohan Gotobed"
+      ],
+      "alive":false,
+      "image":"http://hp-api.herokuapp.com/images/sirius.JPG"
+   },
+   {
+      "name":"Arthur Weasley",
+      "alternate_names":[
+         
+      ],
+      "species":"human",
+      "gender":"male",
+      "house":"Gryffindor",
+      "dateOfBirth":"06-02-1950",
+      "yearOfBirth":1950,
+      "wizard":true,
+      "ancestry":"pure-blood",
+      "eyeColour":"blue",
+      "hairColour":"red",
+      "wand":{
+         "wood":"",
+         "core":"",
+         "length":""
+      },
+      "patronus":"weasel",
+      "hogwartsStudent":false,
+      "hogwartsStaff":false,
+      "actor":"Mark Williams",
+      "alternate_actors":[
+         
+      ],
+      "alive":true,
+      "image":"http://hp-api.herokuapp.com/images/arthur.jpg"
+   },
+{
+   "name":"Lord Voldemort",
+   "alternate_names":[
+      "Tom Marvolo Riddle"
+   ],
+   "species":"human",
+   "gender":"male",
+   "house":"Slytherin",
+   "dateOfBirth":"31-12-1926",
+   "yearOfBirth":1926,
+   "wizard":true,
+   "ancestry":"half-blood",
+   "eyeColour":"red",
+   "hairColour":"bald",
+   "wand":{
+      "wood":"yew",
+      "core":"phoenix feather",
+      "length":13.5
+   },
+   "patronus":"",
+   "hogwartsStudent":false,
+   "hogwartsStaff":false,
+   "actor":"Ralph Fiennes",
+   "alternate_actors":[
+      
+   ],
+   "alive":false,
+   "image":"http://hp-api.herokuapp.com/images/voldemort.jpg"
+},
+{
+   "name":"Bellatrix Lestrange",
+   "alternate_names":[
+      "Bella"
+   ],
+   "species":"human",
+   "gender":"female",
+   "house":"Slytherin",
+   "dateOfBirth":"",
+   "yearOfBirth":1951,
+   "wizard":true,
+   "ancestry":"pure-blood",
+   "eyeColour":"brown",
+   "hairColour":"black",
+   "wand":{
+      "wood":"walnut",
+      "core":"dragon heartstring",
+      "length":12.75
+   },
+   "patronus":"",
+   "hogwartsStudent":false,
+   "hogwartsStaff":false,
+   "actor":"Helena Bonham Carter",
+   "alternate_actors":[
+      
+   ],
+   "alive":false,
+   "image":"http://hp-api.herokuapp.com/images/bellatrix.jpg"
+},
+{
+   "name":"Lucius Malfoy",
+   "alternate_names":[
+      
+   ],
+   "species":"human",
+   "gender":"male",
+   "house":"Slytherin",
+   "dateOfBirth":"",
+   "yearOfBirth":1954,
+   "wizard":true,
+   "ancestry":"pure-blood",
+   "eyeColour":"grey",
+   "hairColour":"blonde",
+   "wand":{
+      "wood":"elm",
+      "core":"dragon heartstring",
+      "length":18
+   },
+   "patronus":"",
+   "hogwartsStudent":false,
+   "hogwartsStaff":false,
+   "actor":"Jason Isaacs",
+   "alternate_actors":[
+      
+   ],
+   "alive":true,
+   "image":"http://hp-api.herokuapp.com/images/lucius.jpg"
+},
+{
+   "name":"Kingsley Shacklebolt",
+   "alternate_names":[
+      
+   ],
+   "species":"human",
+   "gender":"male",
+   "house":"",
+   "dateOfBirth":"",
+   "yearOfBirth":"",
+   "wizard":true,
+   "ancestry":"pure-blood",
+   "eyeColour":"brown",
+   "hairColour":"brown",
+   "wand":{
+      "wood":"",
+      "core":"",
+      "length":""
+   },
+   "patronus":"lynx",
+   "hogwartsStudent":false,
+   "hogwartsStaff":false,
+   "actor":"George Harris",
+   "alternate_actors":[
+      
+   ],
+   "alive":true,
+   "image":"http://hp-api.herokuapp.com/images/kingsley.jpg"
+},
+    {
        "name":"Gregory Goyle",
        "alternate_names":[
           
