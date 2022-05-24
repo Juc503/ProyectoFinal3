@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.item1 { grid-area: C1; 
+        height: 100%; width: 15vw;
+        background-color: transparent;}
+.item5 { grid-area: C2;
+        height: 100%; width: 15vw;
+        background-color: transparent; }
+        
+.item2 { grid-area: R1; 
+        height: 20vh; width: 70vw;
+        background-color: transparent;}
+.item3 { grid-area: R2; 
+        height: 70vh;  width: 70vw;
+        background-color: transparent; }
+.item4 { grid-area: R3; 
+        height: 10vh; width: 70vw;
+        background-color: transparent;}
+
+
+.grid-container {
+background-color:#ffffff;
+display: grid;
+grid-template:
+    'C1 R1 R1 R1 C2'
+    'C1 R2 R2 R2 C2'
+    'C1 R3 R3 R3 C2';
+
+}
+
+.flex{
+  padding: 25px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu{
+  background-color: #f4d109;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Papyrus;
+  font-size: 14px;
+}
+
+
+.contenedor {
+    width: auto;
+    margin: 0 auto;
+    display: flex;
+    
+  }
+
+.casa {
+    /*distribución*/
+    height: 300px;
+    flex-grow: 2;
+    /*text*/
+    font-family: Harry Potter, Arial;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 15px;
+    /*background-image*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110px 150px;
+    /*border-image*/
+
+
+    border-bottom: 30px solid transparent;
+    border-image: url(https://raw.githubusercontent.com/NestorPlasencia/img/master/border-triangle.png) 0% 0% 100% 0% stretch;
+    /*transición*/
+    transition:  0.75s;
+  }
+  
+  .casa:hover {
+    height: 800px;
+  }
+  .none{ display: none;}
+  
+  #Gryffindor {
+
+    height: 740px;
+    transition-timing-function: linear;
+    background-color:  #740001;
+    background-image: url("https://raw.githubusercontent.com/NestorPlasencia/img/master/Gryffindor.png");
+  }
+  
+  #Hufflepuff {
+    height: 738px;
+    background-color: #786254;
+    background-image: url("https://raw.githubusercontent.com/NestorPlasencia/img/master/Hufflepuff.png");
+  }
+  
+  #Ravenclaw {
+    height: 742px;
+    background-color: #31446F;
+    background-image: url("https://raw.githubusercontent.com/NestorPlasencia/img/master/Ravenclaw.png");
+  }
+  
+  #Slytherin {
+    height:750px;
+    background-color: #097146;
+    background-image: url("https://raw.githubusercontent.com/NestorPlasencia/img/master/Slytherin.png");
+  }
+
+
+
+
+
+
+  .box{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.input {
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    background-image: url('https://www.tapdanceman.com/wp-content/uploads/2019/04/Harry-Potter.gif');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border: 4px solid #ffffff;
+    border-radius: 50px;
+    box-sizing: border-box; 
+    font-family: Papyrus;
+    font-weight: bold;
+    font-size: 26px;
+    color: #1A472A;
+    outline: none;
+    transition: .5s;
+}
+.box:hover input{
+    width: 350px;
+    border: 4px solid #f3d304;
+    background: transparent;
+    border-radius: 30px;
+}
+
+
+
+
+
+
+.contact-list {
+    list-style: none;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+img {
+    width: 200px; height: 250px;
+    border: 8px solid #a38b00;
+    border-radius: 50%;
+}
+
+.list-container {
+  padding: 20px;
+  border-top:20px ;
+    height: 70vh;
+    overflow-y: auto;
+}
+
+.photo{
+  background-image: src("file:///Users/redd/Desktop/G15-DEV-1/ProyectoFinal/assets/css/frog.png");
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+
+
+
+
+

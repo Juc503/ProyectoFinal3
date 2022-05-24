@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="fontawesome-free-5.15.1/css/all.css">
+    <script src="https://kit.fontawesome.com/afd6aa68df.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <div class="grid-container">
+        <div class="item1 ">
+            <section class="contenedor">
+                <div class="casa none" id="Col1"></div>
+            </section>
+        </div>
+        <div class="item2  ">
+            <div class="box">
+                <form name="search">
+                    <input type="text" class="input" name="txt" 
+                    onmouseout="document.search.txt.value = ''">
+                </form>
+                    <!--<i class="fas fa-bolt" ></i> -->
+            </div>
+
+        </div>
+        <div class="item3 ">
+            <div class="list-container">
+                <ul id="contacts-ul" class="contact-list">
+                </ul>
+        </div>  
+    </div>
+        <div class="item4 ">
+            <div class="flex">
+
+                <select  id="optionGender" class="menu" >
+                    <option value="Gender">Gender</option>
+                    <option value="female">Female</option>
+                    <option value="man">Male</option>
+                </select>
+
+                <select  id="optionAncestry" class="menu" >
+                    <option value="ancestry">Ancestry</option>
+                    <option value="pure-blood">Pure blood</option>
+                    <option value="half-blood">Half blood</option>
+                    <option value="muggleborn">Muggle born</option>
+                </select>
+
+                <select  id="optionHouse" class="menu" >
+                    <option value="house">House</option>
+                    <option value="gryffindor">Gryffindor</option>
+                    <option value="slytherin">Slytherin</option>
+                    <option value="ravenclaw">Ravenclaw</option>
+                    <option value="hufflepuff">Hufflepuff</option>
+                </select>
+
+            </div>
+        </div>
+        <div class="item5 ">
+            <section class="contenedor">
+                <div class="casa none " id="Col2" ></div>
+            </section>
+        </div>
+    </div>
+
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
