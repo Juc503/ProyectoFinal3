@@ -206,12 +206,7 @@ grid-template:
 .front{
   position: absolute;
   width: 180px; height: 230px;
-
-  font-family: copperplate;
-  font-weight: bold;
-  font-size: 20px;
-  text-align: center;
-  color: #fcfcfc;
+  background-color: #fcfcfc;
   
 }
 
@@ -223,7 +218,7 @@ grid-template:
   transform: rotateY(180deg);
   font-family: copperplate;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 15px;
   color: #fcfcfc;
 
 }

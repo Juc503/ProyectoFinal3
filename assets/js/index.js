@@ -22,12 +22,13 @@ const main = () => {
 // 4. Normalizar los datos => Selector
 const normalizeData = (data) => {
     data.forEach(element => {
-        const { name, image, gender,ancestry, house} = element;
+        const { name, image, gender,patronus,ancestry, house} = element;
         const contact = {
             text: name,
             photo: image,
             gender: gender,
             ancestry: ancestry,
+            patronus:patronus,
             house: house
         };
         contacts.push(contact);
@@ -78,10 +79,15 @@ const renderCardContact = (element) => {
 
     const flipCard = document.createElement("div");
     flipCard.classList.add("back");
-    flipCard.innerHTML=element.house;
+    const datos = document.createElement("p");
+    datos.innerHTML="Ancestry: " + element.ancestry;
+    const datop = document.createElement("p");
+    datop.innerHTML="Patronus: " +element.patronus;
+    flipCard.innerHTML="House: " + element.house;
 
-  
     photoDiv.appendChild(flipCard);
+    flipCard.appendChild(datos);
+    flipCard.appendChild(datop);
     
 
 };
