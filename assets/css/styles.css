@@ -2,10 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 
-
+.grid-container {
+  background-color:#ffffff;
+  display: grid;
+  height: 100vh; width: 100vw;
+  align-items: center;
+  grid-template:
+      'C1 R1 R1 R1 C2'
+      'C1 R2 R2 R2 C2'
+      'C1 R3 R3 R3 C2';
+  
+  }
 
 .item1 { grid-area: C1; 
         height: 100%; width: 15vw;
@@ -19,35 +30,40 @@
         background-color: transparent;}
 .item3 { grid-area: R2; 
         height: 70vh;  width: 70vw;
-        background-color: transparent; }
+        background-color: transparent;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; }
 .item4 { grid-area: R3; 
         height: 10vh; width: 70vw;
-        background-color: transparent;}
+        background-color: transparent;
+        padding-top: 50px;
+        }
 
 
-.grid-container {
-background-color:#ffffff;
-display: grid;
-grid-template:
-    'C1 R1 R1 R1 C2'
-    'C1 R2 R2 R2 C2'
-    'C1 R3 R3 R3 C2';
 
-}
 
 .flex{
-  padding: 25px;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(20px, 1fr));
+  grid-template-rows: repeat(3,minmax(20px, 1fr));
+  grid-column-gap: 100px;
+  grid-row-gap: 20px;
+  align-content: end;
 }
 
 .menu{
+  padding: 0.5em 1em;
+  border-radius: 15px;
   background-color: #f4d109;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   font-family: Papyrus;
-  font-size: 14px;
+  font-size: 1.5em
 }
+
 
 
 .contenedor {
@@ -81,32 +97,32 @@ grid-template:
   }
   
   .casa:hover {
-    height: 800px;
+    height: 90vh;
   }
   .none{ display: none;}
   
   #Gryffindor {
 
-    height: 740px;
+    height: 90vh;
     transition-timing-function: linear;
     background-color:  #740001;
     background-image: url("https://raw.githubusercontent.com/NestorPlasencia/img/master/Gryffindor.png");
   }
   
   #Hufflepuff {
-    height: 738px;
+    height: 91vh;
     background-color: #786254;
     background-image: url("https://raw.githubusercontent.com/NestorPlasencia/img/master/Hufflepuff.png");
   }
   
   #Ravenclaw {
-    height: 742px;
+    height: 90vh;
     background-color: #31446F;
     background-image: url("https://raw.githubusercontent.com/NestorPlasencia/img/master/Ravenclaw.png");
   }
   
   #Slytherin {
-    height:750px;
+    height: 91vh;
     background-color: #097146;
     background-image: url("https://raw.githubusercontent.com/NestorPlasencia/img/master/Slytherin.png");
   }
@@ -124,8 +140,8 @@ grid-template:
 }
 .input {
     padding: 10px;
-    width: 80px;
-    height: 80px;
+    width: 10vw;
+    height: 5vh;
     background-image: url('https://www.tapdanceman.com/wp-content/uploads/2019/04/Harry-Potter.gif');
     background-size:contain;
     background-repeat: no-repeat;
@@ -141,7 +157,8 @@ grid-template:
     transition: .5s;
 }
 .box:hover input{
-    width: 350px;
+    width: 40vw;
+    height: 7vh;
     border: 4px solid #f3d304;
     background: transparent;
     border-radius: 30px;
@@ -154,22 +171,29 @@ grid-template:
 .contact-list {
     list-style: none;
     display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.photo {
-    width: 180px; height: 230px;
-    border: 7px solid #a38b00;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 100px;
+    column-gap:150px;
+
+
     
 }
+.photo {
+  width: 250px; height: 300px;
+  border: 7px solid #a38b00;
+  overflow: hidden;
+}
+
+
+
 .name{ 
   padding: 10px;
   font-family: copperplate;
   font-weight: bold;
-  font-size: 20px;
+  font-size:1.4em;
   color: #460d0d;
   position: absolute;
-  top:220px; left:3px;
+  top:280px; left:3px;
 
 }
 .list-container {
@@ -187,15 +211,19 @@ grid-template:
 
 .cardContainer{
   position: relative;
-  width: 220px; height: 300px;
+  width: 270px; height: 350px;
+
+ 
 
 
 }
 .card{
   position: absolute;
-  width: 200px; height: 250px;
+  width: 250px; height: 290px;
   transform-style: preserve-3d;
   transition: all 0.7s ease;
+
+  
 }
 
 .card:hover {
@@ -205,24 +233,49 @@ grid-template:
 
 .front{
   position: absolute;
-  width: 180px; height: 230px;
-  background-color: #fcfcfc;
+  width: 250px; height: 290px;
+  background-color: #a38b00;
+  overflow: hidden;
   
 }
 
 
 .back{
   position: absolute;
-  width: 180px; height: 230px;
+  background-color:#a38b00;
+  width: 250px; height: 290px;
   backface-visibility: hidden;
   transform: rotateY(180deg);
   font-family: copperplate;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 1.5em;
   color: #fcfcfc;
 
 }
 
 
 
+@media screen and (max-width: 800px) {
 
+  .flex{
+    display: grid;
+    grid-template-columns: repeat(1,minmax(20px, 1fr));
+    grid-template-rows: repeat(autofit,minmax(20px, 1fr));
+    align-items: center;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+
+.menu{
+  border-radius: 15px;
+  font-size: .7rem;
+}
+
+.contact-list {
+  grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+  gap:50px;
+  
+}
+
+
+}
